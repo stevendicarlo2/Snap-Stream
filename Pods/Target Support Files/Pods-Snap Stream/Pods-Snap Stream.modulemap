@@ -1,0 +1,6 @@
+framework module Pods_Snap_Stream {
+  umbrella header "Pods-Snap Stream-umbrella.h"
+
+  export *
+  module * { export * }
+}

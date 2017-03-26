@@ -1,0 +1,27 @@
+PODS:
+  - Agrume (3.1.1)
+  - Alamofire (4.4.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Agrume (from `https://github.com/JanGorman/Agrume.git`)
+  - Alamofire (~> 4.4)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Agrume:
+    :git: https://github.com/JanGorman/Agrume.git
+
+CHECKOUT OPTIONS:
+  Agrume:
+    :commit: 4fee2af652675cfb683ccd3040d91918a8ae7dac
+    :git: https://github.com/JanGorman/Agrume.git
+
+SPEC CHECKSUMS:
+  Agrume: d7f80bd3931cd2cb9488546089bab696ffca4118
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 4a658ffc34ce5d1b4ba2d91dbea02dfc3e0c3ec3
+
+COCOAPODS: 1.2.0
