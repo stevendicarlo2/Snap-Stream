@@ -18,10 +18,12 @@ class MainViewController: UITableViewController, CLLocationManagerDelegate {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
 		locManager.delegate = self
 		locManager.requestWhenInUseAuthorization()
 		locManager.startUpdatingLocation()
 		getEventsData()
+		
 		
 		refresher.attributedTitle = NSAttributedString(string:"Pull to Refresh")
 		refresher.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)

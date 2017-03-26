@@ -376,7 +376,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06E48D1684AF24CACB521EA7 /* Pods-Snap Stream.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 4MBX9X6DLE;
 				INFOPLIST_FILE = "Snap Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AB82F94D5E4F320B0A180D6 /* Pods-Snap Stream.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = 4MBX9X6DLE;
 				INFOPLIST_FILE = "Snap Stream/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
