@@ -43,11 +43,7 @@ class EventViewController: UIViewController, UICollectionViewDelegate, UICollect
 		
 
 		aCell.backgroundColor = UIColor.white
-		let origLink = thisEvent.pictures[indexPath.row].link
-		let index = origLink.index(origLink.startIndex, offsetBy: 28)
-		let firstPart = origLink.substring(to: index)
-		let lastPart = origLink.substring(from: index)
-		let thumb = firstPart + "thumb." + lastPart
+		let thumb = thisEvent.pictures[indexPath.row].thumbnail
 		if let url = NSURL(string: thumb) {
 			if let data = NSData(contentsOf: url as URL) {
 				aCell.image.image = UIImage(data: data as Data)

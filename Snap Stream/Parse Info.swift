@@ -17,6 +17,7 @@ struct Picture{
 	var vote: Int
 	var reported: Bool
 	var uploadedby: String
+    var thumbnail: String
 }
 
 struct Event{
@@ -84,11 +85,11 @@ func convertJSONToPicture(json: JSON) -> [Picture]{
 	var array : [Picture] = []
 	guard json.count > 0 else {return array}
 	for i in 0...json.count-1{
-		let link = String(describing: json[i]["link"]), id = Int(String(describing: json[i]["id"]))!, uploadedby = String(describing: json[i]["uploadedby"]), vote = Int(String(describing: json[i]["vote"]))!, reportedString = String(describing: json[i]["reported"]), dateString = String(describing: json[i]["date"])
+		let link = String(describing: json[i]["link"]), id = Int(String(describing: json[i]["id"]))!, uploadedby = String(describing: json[i]["uploadedby"]), vote = Int(String(describing: json[i]["vote"]))!, reportedString = String(describing: json[i]["reported"]), dateString = String(describing: json[i]["date"]), thumbnail =  String(describing: json[i]["thumbnail"])
 		var reported = true
 		if reportedString == "False" {reported = false}
 		let date = NSDate()
-		let newPic = Picture(id: id, date: date, link: link, vote: vote, reported: reported, uploadedby: uploadedby)
+        let newPic = Picture(id: id, date: date, link: link, vote: vote, reported: reported, uploadedby: uploadedby, thumbnail: thumbnail)
 		array.append(newPic)
 	}
 	return array
