@@ -35,9 +35,6 @@ var allEvents: [Event] = [Event]()
 var singleEvent: [Event] = []
 
 
-let latitude = 38.040986
-let longitude = -78.503890
-
 
 func getEventsData(){
 	
