@@ -50,7 +50,6 @@ class NewEventViewController: UIViewController, UIImagePickerControllerDelegate,
 		let latitude = "\(currentLocation.coordinate.latitude)"
 		let longitude = "\(currentLocation.coordinate.longitude)"
 		
-		print(latitude, longitude)
 		let url = "http://34.206.97.137/createevent?name=\(newTitle)&lat=\(latitude)&lon=\(longitude)"
 		let goodURL = url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
 		

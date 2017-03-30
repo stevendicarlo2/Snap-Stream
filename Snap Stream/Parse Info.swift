@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import CoreLocation
 
 struct Picture{
 	var id: Int
@@ -39,6 +40,17 @@ let longitude = -78.503890
 
 
 func getEventsData(){
+	
+	let locManager = CLLocationManager();
+
+	var currentLocation = CLLocation()
+	if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ){
+		currentLocation = locManager.location!
+	}
+	
+	let latitude = "\(currentLocation.coordinate.latitude)"
+	let longitude = "\(currentLocation.coordinate.longitude)"
+
 	allEvents = [Event]()
 	let theURL : String = "http://34.206.97.137/events?lat=" + String(latitude) + "&lon=" + String(longitude)
 	Alamofire.request(theURL).responseJSON{response in
